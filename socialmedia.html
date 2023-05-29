@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>CyberBloom</title>
+  <link rel="icon" href="assets/images/favicon.png">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <!-- Required for Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b45af59c83.js" crossorigin="anonymous"></script>
+  <!--
+    
+TemplateMo 562 Space Dynamic
+
+https://templatemo.com/tm-562-space-dynamic
+
+-->
+
+<style>
+  #ourprocess{
+    display: flex;
+    margin-top: 80px;
+}
+#ourprocess li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ourprocess li .icon{
+    font-size: 35px;
+    color: #d46028;
+    margin: 0 60px;
+}
+#ourprocess li .text{
+    font-size: 13px;
+    font-weight: 600;
+    color: #d46028;
+}
+
+/* Progress Div Css  */
+
+#ourprocess li .progress{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(68, 68, 68, 0.781);
+    margin: 14px 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.progress::after{
+    content: " ";
+    position: absolute;
+    width: 125px;
+    height: 5px;
+    background-color: rgba(68, 68, 68, 0.781);
+    right: 30px;
+}
+.one::after{
+    width: 0;
+    height: 0;
+}
+#ourprocess li .progress .uil{
+    display: none;
+}
+#ourprocess li .progress p{
+    font-size: 13px;
+}
+
+#prc .shadow-custom{
+  -webkit-box-shadow: 0 0.313rem 0.875rem #d46028;
+  box-shadow: 0 0.313rem 0.875rem #d46028;
+}
+
+/* Active Css  */
+
+#ourprocess li .active{
+    background-color: #d46028;
+    display: grid;
+    place-items: center;
+}
+li .active::after{
+    background-color: #d46028;
+}
+#ourprocess li .active p{
+    display: none;
+}
+#ourprocess li .active .uil{
+    font-size: 20px;
+    display: flex;
+}
+
+/* Responsive Css  */
+
+@media (max-width: 980px) {
+    #ourprocess{
+        flex-direction: column;
+    }
+    #ourprocess li{
+        flex-direction: row;
+    }
+    #ourprocess li .progress{
+        margin: 0 30px;
+    }
+    .progress::after{
+        width: 5px;
+        height: 55px;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    .one::after{
+        height: 0;
+    }
+    #ourprocess li .icon{
+        margin: 15px 0;
+    }
+
+    #prc .shadow-custom{
+  -webkit-box-shadow: 0 0.313rem 0.875rem #d46028;
+  box-shadow: 0 0.313rem 0.875rem #d46028;
+}
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    max-width: 45px; /* Adjust the width as needed */
+    margin-right: 5px; /* Add spacing between the image and text */
+  }
+</style>
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <!-- <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div> -->
+  <div id="preloader">
+    <!-- CyberBloom Preloader -->
+    <div id="cyberbloom-preloader" class="cyberbloom-preloader">
+        <!-- Preloader Animation -->
+        <div class="preloader-animation">
+            <!-- Spinner -->
+            <div class="spinner"></div>
+            <!-- Loader -->
+            <div class="loader">
+                <span data-text-preloader="C" class="animated-letters">C</span>
+                <span data-text-preloader="Y" class="animated-letters">Y</span>
+                <span data-text-preloader="B" class="animated-letters">B</span>
+                <span data-text-preloader="E" class="animated-letters">E</span>
+                <span data-text-preloader="R" class="animated-letters">R</span>
+                <span data-text-preloader="B" class="animated-letters">B</span>
+                <span data-text-preloader="L" class="animated-letters">L</span>
+                <span data-text-preloader="O" class="animated-letters">O</span>
+                <span data-text-preloader="O" class="animated-letters">O</span>
+                <span data-text-preloader="M" class="animated-letters">M</span>
+            </div>
+            <p class="fw-5 text-center text-uppercase">Loading</p>
+        </div>
+        <!-- Loader Animation -->
+        <div class="loader-animation">
+            <div class="row h-100">
+                <!-- Single Loader -->
+                <div class="col-3 single-loader p-0">
+                    <div class="loader-bg"></div>
+                </div>
+                <!-- Single Loader -->
+                <div class="col-3 single-loader p-0">
+                    <div class="loader-bg"></div>
+                </div>
+                <!-- Single Loader -->
+                <div class="col-3 single-loader p-0">
+                    <div class="loader-bg"></div>
+                </div>
+                <!-- Single Loader -->
+                <div class="col-3 single-loader p-0">
+                    <div class="loader-bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- ***** Preloader End ***** -->
+
+  <button id="scroll-to-top-btn" class="btn btn-primary d-none rounded-circle" type="button">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+  
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <span><img src="assets/images/logo2-removebg-preview.png" alt=""></span>
+              <h4><span>Cyber</span>Bloom</h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#aboutus">About Us</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" onclick="toggleSubMenu(event)">Services</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./socialmedia.html">Expert social media management</a>
+                </div>
+              </li>
+              <li class="scroll-to-section"><a href="#pricing">Pricing</a></li>
+              <li class="scroll-to-section"><a href="#teammember">Team</a></li>
+              <li class="scroll-to-section"><a href="#contact">Message Us</a></li>
+              <li class="scroll-to-section">
+                <div class="main-red-button"><a href="#contact">Contact Now</a></div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <script>
+    function toggleSubMenu(event) {
+  event.preventDefault();
+  var dropdownMenu = event.target.nextElementSibling;
+  dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+}
+  </script>
+  
+
+  <section id="socialmediacontent" class="section overflow-hidden bg-grey ptb_100" style="margin-top: 10rem;">
+    <div class="container">
+      <div class="row justify-content-center mb-4"  data-wow-duration="1s" data-wow-delay="0.2s">
+        <div class="col-12 col-md-10 col-lg-7">
+          <!-- Section Heading -->
+          <div class="section-heading text-center wow bounceIn">
+            <h2>Expert <span>social media </span>management</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 2rem;">
+        <div class="col-12 col-lg-12">
+            <ul class="content-list text-left mt-3">
+                <!-- Single Content List -->
+                <li style="margin-bottom: 5px;">
+                    <p style="color: #d46028;">
+                        <span class="arrow-icon"><i class="bi bi-chevron-down"></i></span> <b
+                      style="font-size: medium; margin-left: 20px;">Increased brand awareness : </b>
+                    </p>
+                  <div class="" id="section">
+                    <div class="card card-body" style="border: none;">
+                      <p class="card-text text-justify">Social media platforms provide businesses with the opportunity to
+                        reach a large audience and increase brand awareness. By regularly posting content and engaging
+                        with followers, businesses can establish a strong online presence and increase their visibility.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li style="margin-bottom: 5px;">
+                    <p style="color: #d46028;">
+                        <span class="arrow-icon"><i class="bi bi-chevron-down"></i></span> <b
+                      style="font-size: medium; margin-left: 20px;">Improved customer engagement : </b>
+                    </p>
+                  <div class="" id="section2">
+                    <div class="card card-body" style="border: none;">
+  
+                      <p class="card-text text-justify">Social media allows businesses to interact with their customers in
+                        real-time, which can improve customer engagement and loyalty. By responding to comments and
+                        messages promptly, businesses can build relationships with their customers and demonstrate their
+                        commitment to providing excellent customer service.</p>
+                    </div>
+                  </div>
+                </li>
+                <li style="margin-bottom: 5px;">
+                  <p style="color: #d46028;">
+                    <span class="arrow-icon"><i class="bi bi-chevron-down"></i></span> <b
+                      style="font-size: medium; margin-left: 20px;">Cost-effective marketing : </b>
+                  </p>
+                  <div class="" id="section3">
+                    <div class="card card-body" style="border: none;">
+  
+                      <p class="card-text text-justify">Social media is a cost-effective way for businesses to reach their
+                        target audience. Many social media platforms offer free business accounts, and businesses can
+                        reach a large audience through organic reach or by running targeted ads that are more affordable
+                        than traditional advertising methods.</p>
+                    </div>
+                  </div>
+                </li>
+                <li style="margin-bottom: 5px;">
+                    <p style="color: #d46028;">
+                        <span class="arrow-icon"><i class="bi bi-chevron-down"></i></span> <b
+                      style="font-size: medium; margin-left: 20px;">Data insights : </b>
+                    </p>
+                  <div class="" id="section4">
+                    <div class="card card-body" style="border: none;">
+  
+                      <p class="card-text text-justify">Social media platforms provide businesses with valuable data
+                        insights that can help them improve their marketing strategies. By analyzing engagement metrics,
+                        demographics, and other data points, businesses can refine their content and targeting to better
+                        reach their audience.</p>
+                    </div>
+                  </div>
+                </li>
+                <li style="margin-bottom: 5px;">
+                    <p style="color: #d46028;">
+                        <span class="arrow-icon"><i class="bi bi-chevron-down"></i></span> <b
+                      style="font-size: medium; margin-left: 20px;">Competitive advantage : </b>
+                    </p>
+                  <div class="" id="section5">
+                    <div class="card card-body" style="border: none;">
+  
+                      <p class="card-text text-justify">Finally, businesses that effectively use social media can gain a
+                        competitive advantage over those that don't. By establishing a strong online presence, engaging
+                        with customers, and regularly sharing valuable content, businesses can differentiate themselves
+                        from their competitors and attract new customers.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center pt-5">
+        <p class="pt-4 fw-5">Not sure what to choose? <a style="color: #d46028;" class="service-btn scroll" href="#contact"><strong>Contact
+              Us</strong></a></p>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Price Plan Area End ***** -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore
+              et dolores</p>
+            <div class="phone-info">
+              <h4>For any enquiry, Call Us: </h4>
+            </div>
+            <div class="phone-info">
+              <h4><span><i class="fa fa-phone"></i> <a class="" href="tel:919008403322">
+                <b>+91 9008403322 / 9008413322</b>
+            </a></span></h4>
+            </div>
+            <div class="phone-info">
+              <h4><span><i class="fa fa-inbox"></i> <a class="" href="mailto:support@cyberbloom.in">
+                <b>support@cyberbloom.in</b>
+            </a></span></h4>
+            </div>
+            <div class="phone-info">
+              <h4><span><i class="fa fa-map-marker"></i> <a class="" href="https://goo.gl/maps/wMX3uwwssomnmiZG8"">
+                <b>91springboard,MG Road,
+                    Bengaluru, Karnataka-560025</b>
+            </a></span></h4>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
+                    required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Message"
+                    required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+            <div class="contact-dec">
+              <img src="assets/images/contact-decoration.png" alt="">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p>© Copyright
+            <script>document.write(new Date().getFullYear())</script> CyberBloom All Rights Reserved.
+
+            <br>Design: <a rel="nofollow" href="#">CyberBloom</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/templatemo-custom.js"></script>
+
+  <script>
+   // Get the button:
+const scrollToTopBtn = document.getElementById("scroll-to-top-btn");
+
+// When the user scrolls down 20px from the top of the document, show the button:
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.classList.remove("d-none");
+  } else {
+    scrollToTopBtn.classList.add("d-none");
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document:
+scrollToTopBtn.addEventListener("click", function() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+
+  </script>
+</body>
+
+</html>
